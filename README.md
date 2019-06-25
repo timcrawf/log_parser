@@ -1,10 +1,10 @@
 ## Log Parser
 
-###Requirements
+### Requirements
   You will need to install the user-agents tool using
     `pip3 install user-agents`
 
-###Arguments
+### Arguments
 
   `-l` Path to log file
   `-b` Most popular browser at rank
@@ -12,7 +12,7 @@
         seach of Python, and curl
   `-s` Search browser data by comma separated list
 
-###Examples
+### Examples
 
 The log parser tool can currently be used as such:
 
