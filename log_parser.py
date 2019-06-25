@@ -20,9 +20,15 @@ log_search_instance = LogSearch(options.log_location)
 
 if options.rank != None:
     browser_list = log_search_instance.sorted_browsers()
-    browser_tuple = browser_list[(int(options.rank)-1)]
+    if int(options.rank)-1 >= len(browser_list):
+        rank_position = len(browser_list)-1
+        print("Selection out of range: using {}".format(rank_position+1))
+    else:
+        rank_position = int(options.rank)-1
 
-    print("The browser at position {} is: {}".format(options.rank, browser_tuple[0]))
+    browser_tuple = browser_list[rank_position]
+
+    print("The browser at position {} is: {}".format(rank_position+1, browser_tuple[0]))
     print("{} had {} hits".format(browser_tuple[0], browser_tuple[1]))
 
 if options.search_terms != None:
