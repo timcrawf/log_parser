@@ -26,5 +26,5 @@ if options.rank != None:
     print("{} had {} hits".format(browser_tuple[0], browser_tuple[1]))
 
 if options.search_terms != None:
-    for entry in log_search_instance.return_malicious_traffic(search_terms=options.search_terms.split(',')):
+    for entry in log_search_instance.search_browsers(search_terms=options.search_terms.split(',')):
         print entry

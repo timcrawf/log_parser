@@ -50,7 +50,7 @@ class LogSearch:
     def sorted_browsers(self):
         return self.sort_by_value(self.count(self.logs, browsers=True))
 
-    def return_malicious_traffic(self, search_terms=['Python', 'curl']):
+    def search_browsers(self, search_terms):
         return_list = []
         for entry in self.logs:
             parsed_entry = self.parse_user_agent(self.get_user_agent(entry))
