@@ -7,7 +7,7 @@ parser.add_option("-l", "--log", dest='log_location',
 parser.add_option("-b", "--browser", dest='rank',
                   help="Most popular browser at rank")
 parser.add_option("-m", "--malicious", action="store_const", const= 'Python,curl,Spider,Nimbostratus-Bot,Nimbostratus-Bot,YandexBot',
-                  dest='search_terms', help="Print any potentionaly malicious traffic, based on\nsearch of Pyhton, curl,Spider, Nimbostratus-Bot, and YandexBot")
+                  dest='search_terms', help="Print any potentionaly malicious traffic, based on\nsearch of Pyhton, curl, Spider, Nimbostratus-Bot, and YandexBot")
 parser.add_option("-s", "--search-terms", dest='search_terms',
                   help="search browser data by comma separated list")
 (options, args) = parser.parse_args()
