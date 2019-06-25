@@ -6,8 +6,8 @@ parser.add_option("-l", "--log", dest='log_location',
                   help="Path to log file")
 parser.add_option("-b", "--browser", dest='rank',
                   help="Most popular browser at rank")
-parser.add_option("-m", "--malicious", action="store_const", const= 'Python,curl',
-                  dest='search_terms', help="Print any potentionaly malicious traffic, based on\nsearch of Pyhton and curl")
+parser.add_option("-m", "--malicious", action="store_const", const= 'Python,curl,Spider',
+                  dest='search_terms', help="Print any potentionaly malicious traffic, based on\nsearch of Pyhton, curl, and Spider")
 parser.add_option("-s", "--search-terms", dest='search_terms',
                   help="search browser data by comma separated list")
 (options, args) = parser.parse_args()
