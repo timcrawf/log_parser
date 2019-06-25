@@ -27,4 +27,4 @@ if options.rank != None:
 
 if options.search_terms != None:
     for entry in log_search_instance.search_browsers(search_terms=options.search_terms.split(',')):
-        print entry
+        print(entry)
