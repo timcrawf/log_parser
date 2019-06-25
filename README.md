@@ -9,7 +9,7 @@
 
   `-l` Path to log file<br/>
   `-b` Most popular browser at rank<br/>
-  `-m` Print any potentionaly malicious traffic, based on seach of Python, and curl<br/>
+  `-m` Print any potentionaly malicious traffic, based on seach of Pyhton, curl, Spider, Nimbostratus-Bot, and YandexBot<br/>
   `-s` Search browser data by comma separated list
 
 ### Examples
